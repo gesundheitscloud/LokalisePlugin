@@ -24,9 +24,10 @@ internal class TranslationWriter {
         xmlDoc.documentElement.normalize()
 
         println("Root Node:" + xmlDoc.documentElement.nodeName)
-//        println("PARSED TRANSLATIONS\n $translationKeys")
+        println("PARSED TRANSLATIONS\n $translationKeys")
 
         val strings = xmlDoc.getElementsByTagName("string")
+        println("STRINGS\n $strings")
         // filter only keys that contain translation for the given language
         // and also exclude plurals, as we dont support them for now
         val languageKeys = translationKeys.keys
