@@ -59,7 +59,7 @@ data class Translation(
     @SerializedName("translation")
     val translation: String,
     @SerializedName("translation_id")
-    val translationId: Long,
+    val translationId: Double,
     @SerializedName("words")
     val words: Int
 )
