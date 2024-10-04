@@ -58,6 +58,8 @@ data class Translation(
     val reviewedBy: Int,
     @SerializedName("translation")
     val translation: String,
+    @SerializedName("translation_id")
+    val translationId: Long,
     @SerializedName("words")
     val words: Int
 )
